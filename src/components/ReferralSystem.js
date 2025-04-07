@@ -14,7 +14,7 @@ const ReferralSystem = ({refferal, totalRefsBounty, setTotalRefsBounty}) => {
 
   useEffect(() => {
     if(address) {
-      setRefLink(`domain.com/ref=${address}`)
+      setRefLink(`https://bank-zg3n.vercel.app/?ref=${address}`)
     } else {
       setRefLink("Login to get your referral link")
     }
