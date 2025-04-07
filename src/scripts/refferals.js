@@ -14,7 +14,7 @@ export async function setNewRefferal(address, ref) {
                 refAdr: address,
             }
         })
-    if(findRef){
+    if(!findRef){
         const setRef = await prisma.refs.create({
             data: {
                 address: ref,
