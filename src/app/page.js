@@ -11,9 +11,8 @@ import { Web3Provider } from "../components/Web3Provider";
 import { useAccount } from "wagmi";
 import { useBalance, useReadContract } from "wagmi";
 import { ABI } from "@/scripts/ABI";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { setNewRefferal } from "@/scripts/refferals";
-import { useSearchParams } from 'next/navigation'
 import { config } from "../components/Web3Provider";
 import { getChainId } from '@wagmi/core'
 import { switchChain } from '@wagmi/core'
@@ -42,7 +41,19 @@ export default function Home() {
     <div className={styles.container}>
       <Header />
       <main className={styles.main}>
-      <HeroStats balance={balance} honey={honey} setBalance={setBalance} setHoney={setHoney} reinvest={isAutoReinvest} setReinvest={setIsAutoReinvest} setRefferal={setRefferal} setTotalRefsBounty={setTotalRefsBounty} setRefferalAddress={setRefferalAddress}/>
+      <Suspense fallback={<div>Loading stats...</div>}>
+        <HeroStats 
+          balance={balance} 
+          honey={honey} 
+          setBalance={setBalance} 
+          setHoney={setHoney} 
+          reinvest={isAutoReinvest} 
+          setReinvest={setIsAutoReinvest} 
+          setRefferal={setRefferal} 
+          setTotalRefsBounty={setTotalRefsBounty} 
+          setRefferalAddress={setRefferalAddress}
+        />
+      </Suspense>
         
         <div className={styles.stakingReferralContainer}>
           <div className={styles.leftColumn}>
