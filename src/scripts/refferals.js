@@ -6,13 +6,15 @@ const prisma = new PrismaClient()
 export async function setNewRefferal(address, ref) {
     console.log('REFS START')
     if(address != ref && ethers.isAddress(address) && ethers.isAddress(ref)){
+        console.log('Ref continue')
     try{
         const findRef = await prisma.refs.findFirst({
             where: {
-                address: ref
+                address: ref,
+                refAdr: address,
             }
         })
-    if(true){
+    if(findRef){
         const setRef = await prisma.refs.create({
             data: {
                 address: ref,
