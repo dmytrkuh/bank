@@ -1,0 +1,246 @@
+.stakingPanel {
+  background-color: rgba(255, 210, 60, 0.85);
+  padding: 1.25rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border: 3px solid #ffb52e;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.headerIcon {
+  font-size: 2rem;
+  color: #5a2d00;
+}
+
+.panelHeader h2 {
+  color: #5a2d00;
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  margin: 0;
+  line-height: var(--lh-tight);
+}
+
+.inputContainer {
+  margin-bottom: 1rem;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stakeInput {
+  padding: 1rem;
+  border-radius: 15px;
+  border: 2px solid #ffb52e;
+  font-size: var(--fs-lg);
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #5a2d00;
+  text-align: center;
+}
+
+.percentButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.percentButton {
+  flex: 1;
+  padding: 0.5rem;
+  background-color: #ffd44c;
+  border: 2px solid #ffb52e;
+  border-radius: 10px;
+  color: #5a2d00;
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.percentButton:hover {
+  background-color: #ffb52e;
+  transform: translateY(-2px);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.stakeButton {
+  flex: 1;
+  padding: 0.75rem;
+  background-color: #5a2d00;
+  color: #ffd44c;
+  border: none;
+  border-radius: 15px;
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  line-height: var(--lh-snug);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.harvestButton {
+  flex: 1;
+  padding: 0.75rem;
+  background-color: #7a3c10;
+  color: #ffd44c;
+  border: none;
+  border-radius: 15px;
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  line-height: var(--lh-snug);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.beeIcon, .harvestIcon {
+  font-size: 1.4rem;
+}
+
+.stakeButton:hover, .harvestButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.stakeButton:hover {
+  background-color: #7a3c10;
+}
+
+.harvestButton:hover {
+  background-color: #8a4c20;
+}
+
+.autoReinvestContainer {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 0.25rem;
+}
+
+.toggleSwitch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggleSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggleSlider {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ffb52e;
+  border-radius: 26px;
+  transition: .4s;
+  margin-right: 10px;
+}
+
+.toggleSlider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #ffb52e;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+.toggleSwitch input:checked + .toggleSlider {
+  background-color: #5a2d00;
+}
+
+.toggleSwitch input:checked + .toggleSlider:before {
+  transform: translateX(24px);
+  background-color: #ffd44c;
+}
+
+.toggleLabel {
+  color: #5a2d00;
+  font-weight: 600;
+  font-size: var(--fs-base);
+}
+
+.activationPrice {
+  color: #5a2d00;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+.rewardsInfo {
+  text-align: center;
+  color: #5a2d00;
+}
+
+.highlight {
+  font-weight: 700;
+  color: #7a3c10;
+}
+
+@media (max-width: 1024px) {
+  .stakingPanel {
+    padding: 1.25rem;
+  }
+  
+  .panelHeader {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stakingPanel {
+    padding: 1rem;
+  }
+  
+  .panelHeader {
+    margin-bottom: 1rem;
+  }
+  
+  .inputContainer {
+    margin-bottom: 0.75rem;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .stakeButton {
+    margin-bottom: 0.75rem;
+  }
+}

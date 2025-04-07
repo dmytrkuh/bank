@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(to right, rgba(255, 190, 60, 0.95), rgba(255, 210, 60, 0.95));
+  box-shadow: 0 4px 16px rgba(90, 45, 0, 0.15);
+  width: 100%;
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.headerContainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoIcon {
+  font-size: 2.5rem;
+  color: #5a2d00;
+}
+
+.logoText {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  color: #5a2d00;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(90, 45, 0, 0.1);
+  letter-spacing: -0.5px;
+  line-height: var(--lh-tight);
+}
+
+.connectWallet {
+  display: flex;
+  align-items: center;
+}
+
+.walletButton {
+  background: linear-gradient(135deg, #ffd44c, #ffb52e);
+  color: #5a2d00;
+  border: 2px solid #5a2d00;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: var(--fs-base);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(90, 45, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.walletIcon {
+  font-size: 1.2rem;
+}
+
+.walletButton:hover {
+  background: linear-gradient(135deg, #5a2d00, #7a3c10);
+  color: #ffd44c;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(90, 45, 0, 0.2);
+  border-color: #ffd44c;
+}
+
+.walletButton:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(90, 45, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+  
+  .walletButton {
+    padding: 0.5rem 1rem;
+    font-size: var(--fs-sm);
+    border-width: 1.5px;
+  }
+  
+  .walletIcon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.75rem 1rem;
+  }
+  
+  .walletButton {
+    padding: 0.4rem 0.8rem;
+    font-size: var(--fs-xs);
+    border-width: 1px;
+  }
+}

@@ -1,0 +1,324 @@
+.referralSystem {
+  background-color: rgba(255, 210, 60, 0.85);
+  padding: 1.25rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border: 3px solid #ffb52e;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.referralHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.headerIcon {
+  font-size: 1.75rem;
+  color: #5a2d00;
+}
+
+.referralHeader h2 {
+  color: #5a2d00;
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+  margin: 0;
+  line-height: var(--lh-tight);
+}
+
+.referralLevels {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.referralStats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.statItem {
+  background-color: rgba(255, 225, 120, 0.9);
+  padding: 0.75rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffb52e;
+}
+
+.statLabel {
+  color: #5a2d00;
+  margin: 0 0 0.35rem 0;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  line-height: var(--lh-normal);
+}
+
+.statValue {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: #5a2d00;
+  margin: 0;
+  line-height: var(--lh-snug);
+}
+
+.withdrawButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #5a2d00;
+  color: #ffd44c;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: var(--fs-base);
+  line-height: var(--lh-snug);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.withdrawButton:hover {
+  background-color: #7a3c10;
+  transform: translateY(-2px);
+}
+
+.referralCount {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding-top: 0.75rem;
+  border-top: 2px dashed rgba(90, 45, 0, 0.2);
+}
+
+.countDisplay {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 225, 120, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 2px solid #ffb52e;
+}
+
+.countIcon {
+  font-size: 1.25rem;
+  color: #5a2d00;
+}
+
+.countDisplay span {
+  font-size: var(--fs-base);
+  color: #5a2d00;
+}
+
+.countDisplay strong {
+  font-weight: 700;
+  color: #5a2d00;
+}
+
+.referralCountRow {
+  display: none;
+}
+
+.countValue, .countLabel {
+  display: none;
+}
+
+.sectionTitle {
+  color: #5a2d00;
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.earningsSection, .rewardsSection {
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px dashed rgba(90, 45, 0, 0.2);
+}
+
+.referralPerformance {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.referralLinkContainer {
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.referralInputGroup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.referralInput {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 2px solid #ffb52e;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #5a2d00;
+}
+
+.copyButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #5a2d00;
+  color: #ffd44c;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: var(--fs-base);
+  line-height: var(--lh-snug);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copyIcon {
+  font-size: 1.1rem;
+}
+
+.copyButton:hover {
+  background-color: #7a3c10;
+  transform: translateY(-2px);
+}
+
+.levelCard {
+  flex: 1;
+  background-color: rgba(255, 225, 120, 0.9);
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffb52e;
+}
+
+.levelIcon {
+  background-color: #5a2d00;
+  color: #ffd44c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 auto 0.5rem;
+}
+
+.levelPercent {
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+  color: #5a2d00;
+  margin: 0.5rem 0;
+  line-height: var(--lh-snug);
+}
+
+.levelLabel {
+  color: #5a2d00;
+  margin: 0;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  line-height: var(--lh-normal);
+}
+
+.referralDescription {
+  text-align: center;
+  color: #5a2d00;
+  margin-bottom: 1rem;
+  font-size: var(--fs-base);
+  font-weight: 400;
+  line-height: var(--lh-relaxed);
+}
+
+@media (max-width: 1024px) {
+  .referralSystem {
+    padding: 1.25rem;
+  }
+  
+  .referralHeader {
+    margin-bottom: 1.25rem;
+  }
+  
+  .referralLevels {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .referralSystem {
+    padding: 1rem;
+  }
+  
+  .referralHeader {
+    margin-bottom: 1rem;
+  }
+  
+  .referralLevels {
+    margin-bottom: 1rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .levelCard {
+    padding: 0.75rem;
+  }
+  
+  .referralLinkContainer {
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .referralInputGroup {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .referralInput {
+    width: 100%;
+  }
+  
+  .copyButton {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .referralStats {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .withdrawButton {
+    margin-bottom: 1rem;
+  }
+  
+  .referralCount {
+    margin-bottom: 1rem;
+  }
+  
+  .referralPerformance {
+    margin-bottom: 1rem;
+  }
+  
+  .earningsSection, .rewardsSection {
+    margin-bottom: 1.25rem;
+  }
+}
