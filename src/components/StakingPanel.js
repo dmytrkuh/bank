@@ -148,7 +148,7 @@ const StakingPanel = ({isAutoReinvest, setIsAutoReinvest, refferal, balance, set
       
       <div className={styles.rewardsInfo}>
         <p>Daily Rewards: <span className={styles.highlight}>2.1%</span></p>
-        <p>Estimated Monthly Return: <span className={styles.highlight}>117%</span></p>
+        <p>Estimated Monthly Return: <span className={styles.highlight}>63%</span></p>
       </div>
     </div>
   );
