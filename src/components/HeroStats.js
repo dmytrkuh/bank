@@ -149,7 +149,7 @@ const HeroStats = ({ balance, honey, reinvest, setHoney, setBalance, isAutoReinv
       <div className={styles.heroStatsContainer}>
         <div className={styles.heroContent}>
           <h1 className={styles.title}>BNB Hive</h1>
-          <p className={styles.description}>Stake BNB and earn 2.1% daily rewards</p>
+          <p className={styles.description}>Stake BNB and earn 3.9% daily rewards</p>
         </div>
         <div className={styles.statsContent}>
           <div className={styles.statCard}>
