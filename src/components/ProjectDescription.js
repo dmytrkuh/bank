@@ -14,13 +14,13 @@ const ProjectDescription = () => {
       <div className={styles.descriptionContent}>
         <p>
           BNB Hive is a decentralized investment platform that allows you to stake your BNB and earn 
-          <span className={styles.highlight}> 3.9% daily rewards</span> on your investment.
+          <span className={styles.highlight}> 2.1% daily rewards</span> on your investment.
         </p>
         
         <div className={styles.featuresList}>
           <div className={styles.featureItem}>
             <GiBee className={styles.featureIcon} />
-            <p>Earn <span className={styles.highlight}>3.9%</span> daily returns on your staked BNB</p>
+            <p>Earn <span className={styles.highlight}>2.1%</span> daily returns on your staked BNB</p>
           </div>
           <div className={styles.featureItem}>
             <GiBee className={styles.featureIcon} />
