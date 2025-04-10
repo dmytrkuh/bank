@@ -14,7 +14,7 @@ const ReferralSystem = ({refferal, totalRefsBounty, setTotalRefsBounty}) => {
 
   useEffect(() => {
     if(address) {
-      setRefLink(`https://bank-zg3n.vercel.app/?ref=${address}`)
+      setRefLink(`https://bnbhive.xyz/?ref=${address}`)
     } else {
       setRefLink("Login to get your referral link")
     }
@@ -98,7 +98,7 @@ const ReferralSystem = ({refferal, totalRefsBounty, setTotalRefsBounty}) => {
         <h3 className={styles.sectionTitle}>Reward Levels</h3>
         <div className={styles.referralLevels}>
           <div className={styles.levelCard}>
-            <p className={styles.levelPercent}>20%</p>
+            <p className={styles.levelPercent}>30%</p>
             <p className={styles.levelLabel}>Direct</p>
           </div>
           <div className={styles.levelCard}>
@@ -106,7 +106,7 @@ const ReferralSystem = ({refferal, totalRefsBounty, setTotalRefsBounty}) => {
             <p className={styles.levelLabel}>Indirect</p>
           </div>
           <div className={styles.levelCard}>
-            <p className={styles.levelPercent}>1%</p>
+            <p className={styles.levelPercent}>2%</p>
             <p className={styles.levelLabel}>Extended</p>
           </div>
         </div>

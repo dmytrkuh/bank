@@ -166,7 +166,7 @@ const HeroStats = ({ balance, honey, reinvest, setHoney, setBalance, isAutoReinv
             {/* <p className={styles.statValue}>{honey} BNB</p> */}
           </div>
           <div className={styles.statCard}>
-            <h3>Sell Tax</h3>
+            <h3>Withdrawal Tax</h3>
             <p className={styles.statValue}>5%</p>
           </div>
         </div>
